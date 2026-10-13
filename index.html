@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Гардероб — Прототип</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ЭКРАН 1. Главная -->
+  <div class="s active" id="s1">
+    <div class="hdr">
+      <div class="s-bar clk" data-to="s2">🔍 Поиск объявлений</div>
+      <div class="icon-box clk" data-to="s3">⚙</div>
+      <div class="icon-box clk" data-to="s11">♡</div>
+    </div>
+    <div class="sc p8 grid2">
+      <div class="item clk" data-to="s4">
+        <div class="item-img"><span class="ic">♡</span></div>
+        <div class="item-info">
+          <div class="fs16 b t-m">120 BYN</div>
+          <div class="fs12 t-s mt4" style="line-height:1.3">Nike Air Force 1</div>
+          <div class="fs11 t-t mt4 clk" data-to="s5">@seller_nick</div>
+          <div class="f js ac mt8"><span class="sz">42 EU</span><span class="fs10 t-mu">23 авг., 13:47</span></div>
+        </div>
+      </div>
+      <div class="item clk" data-to="s4">
+        <div class="item-img"><span class="ic">♡</span></div>
+        <div class="item-info">
+          <div class="fs16 b t-m">250 BYN</div>
+          <div class="fs12 t-s mt4" style="line-height:1.3">Худи Carhartt WIP</div>
+          <div class="fs11 t-t mt4 clk" data-to="s5">@archive_by</div>
+          <div class="f js ac mt8"><span class="sz">L</span><span class="fs10 t-mu">23 авг., 12:15</span></div>
+        </div>
+      </div>
+      <div class="item clk" data-to="s4">
+        <div class="item-img"><span class="ic">♡</span></div>
+        <div class="item-info">
+          <div class="fs16 b t-m">180 BYN</div>
+          <div class="fs12 t-s mt4" style="line-height:1.3">Джинсы Polar Big Boy</div>
+          <div class="fs11 t-t mt4 clk" data-to="s5">@street_shop</div>
+          <div class="f js ac mt8"><span class="sz">M / 30</span><span class="fs10 t-mu">22 авг., 19:12</span></div>
+        </div>
+      </div>
+      <div class="item clk" data-to="s4">
+        <div class="item-img"><span class="ic">♡</span></div>
+        <div class="item-info">
+          <div class="fs16 b t-m">90 BYN</div>
+          <div class="fs12 t-s mt4" style="line-height:1.3">Футболка Stussy</div>
+          <div class="fs11 t-t mt4 clk" data-to="s5">@vintage_minsk</div>
+          <div class="f js ac mt8"><span class="sz">XL</span><span class="fs10 t-mu">21 авг., 11:40</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="tb">
+      <div class="tb-i a"><div class="fs20">🏠</div>Главная</div>
+      <div class="tb-plus clk" data-to="s7">+</div>
+      <div class="tb-i clk" data-to="s8"><div class="fs20">👤</div>Профиль</div>
+    </div>
+  </div>
+
+  <!-- ЭКРАН 2. Поиск -->
+  <div class="s" id="s2">
+    <div class="hdr">
+      <div class="fs15 t-t clk" data-to="s1">←</div>
+      <div class="s-bar t-m">Nike|</div>
+    </div>
+    <div class="sc p16">
+      <div class="fs13 t-t mb8">История поиска</div>
+      <div class="fs14 t-s mb16" style="line-height:2">dunks<br>yeezy<br>carhartt</div>
+      <div class="fs13 t-t mb8 mt16">Популярные бренды</div>
+      <div class="f fw gap8 mb16">
+        <div class="chip">Nike</div><div class="chip">adidas</div><div class="chip">Carhartt</div><div class="chip">Stussy</div>
+      </div>
+      <div class="fs13 t-t mb12">Результаты поиска</div>
+      <div class="grid2">
+        <div class="item clk" data-to="s4">
+          <div class="item-img"><span class="ic">♡</span></div>
+          <div class="item-info">
+            <div class="fs16 b t-m">120 BYN</div>
+            <div class="fs12 t-s mt4" style="line-height:1.3">Nike Air Force 1</div>
+            <div class="fs11 t-t mt4 clk" data-to="s5">@seller_nick</div>
+            <div class="f js ac mt8"><span class="sz">42 EU</span><span class="fs10 t-mu">23 авг., 13:47</span></div>
+          </div>
+        </div>
+        <div class="item clk" data-to="s4">
+          <div class="item-img"><span class="ic">♡</span></div>
+          <div class="item-info">
+            <div class="fs16 b t-m">310 BYN</div>
+            <div class="fs12 t-s mt4" style="line-height:1.3">Nike Dunk Low Retro</div>
+            <div class="fs11 t-t mt4 clk" data-to="s5">@sneaker_head</div>
+            <div class="f js ac mt8"><span class="sz">41 EU</span><span class="fs10 t-mu">22 авг., 15:30</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ЭКРАН 3. Фильтры -->
+  <div class="s" id="s3">
+    <div class="hdr js">
+      <div class="fs15 t-t clk" data-to="s1">←</div>
+      <div class="fs18 b">Фильтры</div>
+      <div class="fs14 t-t">Сбросить</div>
+    </div>
+    <div class="sc" style="padding-bottom:90px">
+      <div class="p16" style="border-bottom:1px solid #1a1a1a"><div class="fs13 t-t mb12">1. Раздел</div><div class="f fw gap8"><div class="chip a">Мужское</div><div class="chip">Женское</div></div></div>
+      <div class="p16" style="border-bottom:1px solid #1a1a1a"><div class="fs13 t-t mb12">2. Категория</div><div class="f fw gap8"><div class="chip a">Штаны</div><div class="chip">Худи / свитшоты</div><div class="chip">Свитера / кардиганы</div><div class="chip">Футболки / рубашки / поло</div><div class="chip">Верхняя одежда</div><div class="chip">Обувь</div></div></div>
+      <div class="p16" style="border-bottom:1px solid #1a1a1a"><div class="fs13 t-t mb12">3. Подкатегория</div><div class="f fw gap8"><div class="chip a">Джинсы</div><div class="chip">Спортивные</div><div class="chip">Брюки</div><div class="chip">Шорты</div></div></div>
+      <div class="p16" style="border-bottom:1px solid #1a1a1a"><div class="fs13 t-t mb12">4. Фит / Посадка</div><div class="f fw gap8"><div class="chip">Скинни</div><div class="chip">Слим</div><div class="chip">Прямые</div><div class="chip a">Клёш</div><div class="chip">Буткат</div><div class="chip">Мом</div><div class="chip">Бойфренд</div><div class="chip">Бэги</div></div></div>
+      <div class="p16" style="border-bottom:1px solid #1a1a1a"><div class="fs13 t-t mb12">5. Размер</div><div class="f fw gap8"><div class="chip">W28</div><div class="chip">W29</div><div class="chip a">W30</div><div class="chip">W31</div><div class="chip">W32</div><div class="chip">W33</div><div class="chip">W34</div></div></div>
+      <div class="p16" style="border-bottom:1px solid #1a1a1a"><div class="fs13 t-t mb12">6. Состояние</div><div class="f fw gap8"><div class="chip">Новое с биркой</div><div class="chip">Новое</div><div class="chip a">Отличное</div><div class="chip">Хорошее</div><div class="chip">Нормальное</div><div class="chip">Плохое</div><div class="chip">Ужасное</div></div></div>
+      <div class="p16" style="border-bottom:1px solid #1a1a1a"><div class="fs13 t-t mb12">7. Цвет</div><div class="f fw gap8">
+        <div class="color-c" style="background:#000"></div><div class="color-c" style="background:#fff"></div><div class="color-c" style="background:#888"></div><div class="color-c a" style="background:#1e3a8a"></div><div class="color-c" style="background:#991b1b"></div><div class="color-c" style="background:#166534"></div><div class="color-c" style="background:#f59e0b"></div><div class="color-c" style="background:#78350f"></div><div class="color-c" style="background:#f472b6"></div><div class="color-c" style="background:#facc15"></div><div class="color-c" style="background:#ea580c"></div><div class="color-c" style="background:#6b21a8"></div>
+      </div></div>
+      <div class="p16" style="border-bottom:1px solid #1a1a1a"><div class="fs13 t-t mb12">8. Сезон</div><div class="f fw gap8"><div class="chip">Лето</div><div class="chip">Зима</div><div class="chip a">Демисезон</div></div></div>
+      <div class="p16" style="border-bottom:1px solid #1a1a1a"><div class="fs13 t-t mb12">9. Материал</div><div class="f fw gap8"><div class="chip">Хлопок</div><div class="chip a">Деним</div><div class="chip">Кожа</div><div class="chip">Шерсть</div><div class="chip">Синтетика</div><div class="chip">Лён</div><div class="chip">Шёлк</div><div class="chip">Замша</div></div></div>
+      <div class="p16" style="border-bottom:1px solid #1a1a1a"><div class="fs13 t-t mb12">10. Тип вещи</div><div class="f fw gap8"><div class="chip a">Брендовая</div><div class="chip">Тайп</div><div class="chip">Ретро</div></div></div>
+      <div class="p16" style="border-bottom:1px solid #1a1a1a"><div class="fs13 t-t mb12">11. Бренд</div><input class="in bg-i" placeholder="🔍 Поиск бренда..."></div>
+      <div class="p16" style="border-bottom:1px solid #1a1a1a"><div class="fs13 t-t mb12">12. Цена</div><div class="f gap8"><input class="in bg-i" placeholder="от"><input class="in bg-i" placeholder="до"></div></div>
+      <div class="p16" style="border-bottom:1px solid #1a1a1a"><div class="fs13 t-t mb12">13. Страна производства</div><input class="in bg-i" placeholder="Введите страну"></div>
+      <div class="p16 f js ac">
+        <div><div class="fs14 b">Проверено</div><div class="fs12 t-t mt4">Только проверенные продавцы</div></div>
+        <div class="toggle-switch"></div>
+      </div>
+    </div>
+    <div class="btn btn-fix clk" data-to="s1">Показать результаты</div>
+  </div>
+
+  <!-- ЭКРАН 4. Карточка товара -->
+  <div class="s" id="s4">
+    <div class="sc" style="padding-bottom:80px">
+      <div style="height:360px;background:linear-gradient(135deg, #2a2a2a, #3a3a3a);position:relative;padding:16px">
+        <div class="fs22 t-m clk" data-to="s1">←</div>
+        <div class="fs26" style="position:absolute;top:16px;right:16px">♡</div>
+        <div class="f jc gap8" style="position:absolute;bottom:16px;width:100%;left:0">
+          <div style="width:8px;height:8px;background:#fff;border-radius:50%"></div>
+          <div style="width:8px;height:8px;background:#555;border-radius:50%"></div>
+          <div style="width:8px;height:8px;background:#555;border-radius:50%"></div>
+        </div>
+      </div>
+      <div class="p16">
+        <div class="fs26 b">120 BYN</div>
+        <div class="fs16 mt8">Nike Air Force 1</div>
+        <div class="mt8"><span class="sz">42 EU</span></div>
+        <div class="bg-c p12 mt16 f ac gap12 clk" data-to="s5">
+          <div class="ava-s">👤</div>
+          <div>
+            <div class="fs14 b">@seller_nick</div>
+            <div class="fs12 t-t mt4">⭐ 4.8 · 24 отзыва</div>
+          </div>
+        </div>
+        <div class="bg-c p16 mt16">
+          <div class="fs14 b mb8">Характеристики</div>
+          <div class="card-row"><div class="t-t fs13">Бренд</div><div class="t-m fs13 b">Nike</div></div>
+          <div class="card-row"><div class="t-t fs13">Тип вещи</div><div class="t-m fs13">Брендовая</div></div>
+          <div class="card-row"><div class="t-t fs13">Категория</div><div class="t-m fs13">Обувь → Кроссовки</div></div>
+          <div class="card-row"><div class="t-t fs13">Фит / Посадка</div><div class="t-m fs13">Regular</div></div>
+          <div class="card-row"><div class="t-t fs13">Размер</div><div class="t-m fs13">42 EU</div></div>
+          <div class="card-row"><div class="t-t fs13">Цвет</div><div class="t-m fs13">Белый</div></div>
+          <div class="card-row"><div class="t-t fs13">Материал</div><div class="t-m fs13">Кожа</div></div>
+          <div class="card-row"><div class="t-t fs13">Сезон</div><div class="t-m fs13">Демисезон</div></div>
+          <div class="card-row"><div class="t-t fs13">Состояние</div><div class="t-m fs13">Отличное</div></div>
+          <div class="card-row"><div class="t-t fs13">Страна производства</div><div class="t-m fs13">Вьетнам</div></div>
+        </div>
+        <div class="mt16">
+          <div class="fs14 b mb8">Описание</div>
+          <div class="fs13 t-s" style="line-height:1.4">Продаю классические форсы в отличном состоянии. Носились аккуратно один сезон, регулярная чистка. Полный комплект с оригинальной коробкой.</div>
+        </div>
+        <div class="f gap8 mt16">
+          <div class="bg-i p12 fs13 b" style="border-radius:12px;flex:1;text-align:center">📞 Телефон</div>
+          <div class="bg-i p12 fs13 b" style="border-radius:12px;flex:1;text-align:center">✈ Telegram</div>
+          <div class="bg-i p12 fs13 b" style="border-radius:12px;flex:1;text-align:center">◉ Instagram</div>
+        </div>
+      </div>
+    </div>
+    <div class="btn btn-fix">В избранное</div>
+  </div>
+
+  <!-- ЭКРАН 5. Чужой профиль -->
+  <div class="s" id="s5">
+    <div class="hdr"><div class="fs15 t-t clk" data-to="s1">←</div></div>
+    <div class="sc p16">
+      <div class="f fc ac">
+        <div class="ava">👤</div>
+        <div class="fs20 b mt12">@seller_nick</div>
+        <div class="fs13 t-t mt4">Минск</div>
+        <div class="fs14 mt8">⭐ 4.8 · 24 отзыва</div>
+        <div class="mt16" style="width:100%">
+          <div class="btn-s clk" data-to="s6" style="width:100%;padding:14px;text-align:center">💬 Отзывы</div>
+        </div>
+      </div>
+      <div class="f gap8 mt16 mb16">
+        <div class="chip a">По дате</div><div class="chip">Дешёвые</div><div class="chip">Дорогие</div>
+      </div>
+      <div class="grid2">
+        <div class="item clk" data-to="s4">
+          <div class="item-img"><span class="ic">♡</span></div>
+          <div class="item-info">
+            <div class="fs16 b t-m">120 BYN</div>
+            <div class="fs12 t-s mt4" style="line-height:1.3">Nike Air Force 1</div>
+            <div class="fs11 t-t mt4">@seller_nick</div>
+            <div class="f js ac mt8"><span class="sz">42 EU</span><span class="fs10 t-mu">23 авг., 13:47</span></div>
+          </div>
+        </div>
+        <div class="item clk" data-to="s4">
+          <div class="item-img"><span class="ic">♡</span></div>
+          <div class="item-info">
+            <div class="fs16 b t-m">160 BYN</div>
+            <div class="fs12 t-s mt4" style="line-height:1.3">Худи Nike Vintage</div>
+            <div class="fs11 t-t mt4">@seller_nick</div>
+            <div class="f js ac mt8"><span class="sz">L</span><span class="fs10 t-mu">22 авг., 19:12</span></div>
+          </div>
+        </div>
+        <div class="item clk" data-to="s4">
+          <div class="item-img"><span class="ic">♡</span></div>
+          <div class="item-info">
+            <div class="fs16 b t-m">210 BYN</div>
+            <div class="fs12 t-s mt4" style="line-height:1.3">Кроссовки New Balance</div>
+            <div class="fs11 t-t mt4">@seller_nick</div>
+            <div class="f js ac mt8"><span class="sz">42.5 EU</span><span class="fs10 t-mu">21 авг., 11:40</span></div>
+          </div>
+        </div>
+        <div class="item clk" data-to="s4">
+          <div class="item-img"><span class="ic">♡</span></div>
+          <div class="item-info">
+            <div class="fs16 b t-m">85 BYN</div>
+            <div class="fs12 t-s mt4" style="line-height:1.3">Шорты Nike Pro</div>
+            <div class="fs11 t-t mt4">@seller_nick</div>
+            <div class="f js ac mt8"><span class="sz">M</span><span class="fs10 t-mu">20 авг., 16:05</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ЭКРАН 6. Отзывы -->
+  <div class="s" id="s6">
+    <div class="hdr">
+      <div class="fs15 t-t clk" data-to="s5">←</div>
+      <div class="fs16 b">Отзывы (24)</div>
+    </div>
+    <div class="sc p16">
+      <div class="f gap8 mb16"><div class="chip a">Сначала новые</div><div class="chip">С высоким рейтингом</div></div>
+      <div class="mb16" style="border-bottom:1px solid #1a1a1a;padding-bottom:16px">
+        <div class="f gap12 ac mb8"><div class="ava-s">👤</div><div><div class="fs14 b">@buyer1</div><div class="fs11 t-t">⭐ 5 · 12 авг., 14:20</div></div></div>
+        <div class="fs13 t-s">Отличные кроссовки, состояние соответствует описанию! Быстрая отправка.</div>
+        <div class="bg-c p12 mt8 mlauto" style="width:90%">
+          <div class="fs12 b mb4">Продавец:</div>
+          <div class="fs13 t-s">Спасибо за покупку, носите с удовольствием!</div>
+        </div>
+      </div>
+      <div class="mb16" style="border-bottom:1px solid #1a1a1a;padding-bottom:16px">
+        <div class="f gap12 ac mb8"><div class="ava-s">👤</div><div><div class="fs14 b">@fashion_boy</div><div class="fs11 t-t">⭐ 5 · 5 авг., 18:05</div></div></div>
+        <div class="fs13 t-s">Всё четко, товар оригинальный, рекомендую продавца.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ЭКРАН 7. Добавить товар -->
+  <div class="s" id="s7">
+    <div class="hdr">
+      <div class="fs15 t-t clk" data-to="s1">←</div>
+      <div class="fs16 b">Добавить товар</div>
+    </div>
+    <div class="sc p16" style="padding-bottom:80px">
+      <div class="grid2" style="grid-template-columns:1fr 1fr 1fr;gap:8px;margin-bottom:16px">
+        <div class="photo-slot">+</div><div class="photo-slot"></div><div class="photo-slot"></div>
+      </div>
+      <div class="fs12 t-t mb4">Название *</div><input class="in mb12" placeholder="Например: Nike Air Force 1">
+      <div class="fs12 t-t mb4">Цена (BYN) *</div><input class="in mb12" placeholder="0.00">
+      <div class="fs12 t-t mb4">Бренд *</div><input class="in mb12" placeholder="Выберите или введите бренд">
+      <div class="fs12 t-t mb4">Тип вещи *</div><div class="f fw gap8 mb12"><div class="chip a">Брендовая</div><div class="chip">Тайп</div><div class="chip">Ретро</div></div>
+      <div class="fs12 t-t mb4">Раздел *</div><div class="f fw gap8 mb12"><div class="chip a">Мужское</div><div class="chip">Женское</div></div>
+      <div class="fs12 t-t mb4">Категория *</div><div class="f fw gap8 mb12"><div class="chip a">Обувь</div><div class="chip">Штаны</div><div class="chip">Верхняя одежда</div></div>
+      <div class="fs12 t-t mb4">Фит / Посадка *</div><div class="f fw gap8 mb12"><div class="chip a">Regular</div><div class="chip">Oversize</div><div class="chip">Slim</div></div>
+      <div class="fs12 t-t mb4">Размер *</div><div class="f fw gap8 mb12"><div class="chip a">42 EU</div><div class="chip">41 EU</div><div class="chip">43 EU</div></div>
+      <div class="fs12 t-t mb4">Описание</div><textarea class="in mb12" placeholder="Опишите состояние, дефекты, нюансы..."></textarea>
+      <div class="fs12 t-t mb4">Контакты (минимум 1) *</div>
+      <input class="in mb8" placeholder="Телефон: +375XXXXXXXXX">
+      <input class="in mb8" placeholder="Telegram: @username">
+      <input class="in mb16" placeholder="Instagram: @username">
+    </div>
+    <div class="btn btn-fix clk" data-to="s1" style="opacity:0.5">Опубликовать</div>
+  </div>
+
+  <!-- ЭКРАН 8. Свой профиль -->
+  <div class="s" id="s8">
+    <div class="sc p16">
+      <div class="f fc ac mb16">
+        <div class="ava">👤</div>
+        <div class="fs20 b mt12">@my_nick</div>
+        <div class="fs13 t-t mt4">Брест</div>
+        <div class="fs14 mt8">⭐ 5.0 · 2 отзыва</div>
+      </div>
+      <div class="menu-item clk" data-to="s9"><span>👕 Мой гардероб</span><span class="t-t">→</span></div>
+      <div class="menu-item clk" data-to="s11"><span>♡ Избранное</span><span class="t-t">→</span></div>
+      <div class="menu-item clk" data-to="s6"><span>💬 Отзывы обо мне</span><span class="t-t">→</span></div>
+      <div class="menu-item clk" data-to="s13"><span>✍ Оставить отзыв</span><span class="t-t">→</span></div>
+      <div class="menu-item mb16 clk" data-to="s12"><span>⚙ Настройки</span><span class="t-t">→</span></div>
+      <div class="fs15 b mb12">Мои объявления</div>
+      <div class="f gap8 mb12"><div class="chip a">По дате</div><div class="chip">Дешёвые</div><div class="chip">Дорогие</div></div>
+      <div class="grid2">
+        <div class="item clk" data-to="s4">
+          <div class="item-img"><span class="ic">♡</span></div>
+          <div class="item-info">
+            <div class="fs16 b t-m">120 BYN</div>
+            <div class="fs12 t-s mt4" style="line-height:1.3">Nike Air Force 1</div>
+            <div class="f js ac mt8"><span class="sz">42 EU</span><span class="fs10 t-mu">23 авг., 13:47</span></div>
+            <div class="f js ac mt8 pt8" style="border-top:1px solid #222222"><span class="fs12 t-t">👁 42</span><span class="fs16 t-t">⋯</span></div>
+          </div>
+        </div>
+        <div class="item clk" data-to="s4">
+          <div class="item-img"><span class="ic">♡</span></div>
+          <div class="item-info">
+            <div class="fs16 b t-m">200 BYN</div>
+            <div class="fs12 t-s mt4" style="line-height:1.3">Куртка Stone Island</div>
+            <div class="f js ac mt8"><span class="sz">L</span><span class="fs10 t-mu">22 авг., 19:12</span></div>
+            <div class="f js ac mt8 pt8" style="border-top:1px solid #222222"><span class="fs12 t-t">👁 118</span><span class="fs16 t-t">⋯</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="tb">
+      <div class="tb-i clk" data-to="s1"><div class="fs20">🏠</div>Главная</div>
+      <div class="tb-plus clk" data-to="s7">+</div>
+      <div class="tb-i a"><div class="fs20">👤</div>Профиль</div>
+    </div>
+  </div>
+
+  <!-- ЭКРАН 9. Мой гардероб — Активные -->
+  <div class="s" id="s9">
+    <div class="hdr">
+      <div class="fs15 t-t clk" data-to="s8">←</div>
+      <div class="fs16 b">Мой гардероб</div>
+    </div>
+    <div class="f p16 gap8">
+      <div class="chip a">Активные</div>
+      <div class="chip clk" data-to="s10">Проданные</div>
+    </div>
+    <div class="sc p8 grid2">
+      <div class="item clk" data-to="s4">
+        <div class="item-img"><span class="ic">♡</span></div>
+        <div class="item-info">
+          <div class="fs16 b t-m">120 BYN</div>
+          <div class="fs12 t-s mt4" style="line-height:1.3">Nike Air Force 1</div>
+          <div class="f js ac mt8"><span class="sz">42 EU</span><span class="fs10 t-mu">23 авг., 13:47</span></div>
+          <div class="f js ac mt8 pt8" style="border-top:1px solid #222222"><span class="fs12 t-t">👁 42</span><span class="fs16 t-t">⋯</span></div>
+        </div>
+      </div>
+      <div class="item clk" data-to="s4">
+        <div class="item-img"><span class="ic">♡</span></div>
+        <div class="item-info">
+          <div class="fs16 b t-m">200 BYN</div>
+          <div class="fs12 t-s mt4" style="line-height:1.3">Куртка Stone Island</div>
+          <div class="f js ac mt8"><span class="sz">L</span><span class="fs10 t-mu">22 авг., 19:12</span></div>
+          <div class="f js ac mt8 pt8" style="border-top:1px solid #222222"><span class="fs12 t-t">👁 118</span><span class="fs16 t-t">⋯</span></div>
+        </div>
+      </div>
+      <div class="item clk" data-to="s4">
+        <div class="item-img"><span class="ic">♡</span></div>
+        <div class="item-info">
+          <div class="fs16 b t-m">95 BYN</div>
+          <div class="fs12 t-s mt4" style="line-height:1.3">Свитшот Champion</div>
+          <div class="f js ac mt8"><span class="sz">M</span><span class="fs10 t-mu">21 авг., 11:40</span></div>
+          <div class="f js ac mt8 pt8" style="border-top:1px solid #222222"><span class="fs12 t-t">👁 29</span><span class="fs16 t-t">⋯</span></div>
+        </div>
+      </div>
+      <div class="item clk" data-to="s4">
+        <div class="item-img"><span class="ic">♡</span></div>
+        <div class="item-info">
+          <div class="fs16 b t-m">140 BYN</div>
+          <div class="fs12 t-s mt4" style="line-height:1.3">Джинсы Levi's 501</div>
+          <div class="f js ac mt8"><span class="sz">W32</span><span class="fs10 t-mu">20 авг., 16:05</span></div>
+          <div class="f js ac mt8 pt8" style="border-top:1px solid #222222"><span class="fs12 t-t">👁 85</span><span class="fs16 t-t">⋯</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ЭКРАН 10. Мой гардероб — Проданные -->
+  <div class="s" id="s10">
+    <div class="hdr">
+      <div class="fs15 t-t clk" data-to="s8">←</div>
+      <div class="fs16 b">Мой гардероб</div>
+    </div>
+    <div class="f p16 gap8">
+      <div class="chip clk" data-to="s9">Активные</div>
+      <div class="chip a">Проданные</div>
+    </div>
+    <div class="sc">
+      <div class="f gap12 ac p16" style="border-bottom:1px solid #1a1a1a">
+        <div style="width:60px;height:60px;background:linear-gradient(135deg, #2a2a2a, #3a3a3a);border-radius:10px;flex-shrink:0"></div>
+        <div style="flex:1">
+          <div class="fs14 b">Nike Air Force 1</div>
+          <div class="fs14 b mt4 t-m">120 BYN</div>
+          <div class="fs12 t-t mt4">Покупатель: <span class="t-s clk" data-to="s5">@buyer_nick</span></div>
+        </div>
+        <div class="fs11 t-t">23 авг., 13:47</div>
+      </div>
+      <div class="f gap12 ac p16" style="border-bottom:1px solid #1a1a1a">
+        <div style="width:60px;height:60px;background:linear-gradient(135deg, #2a2a2a, #3a3a3a);border-radius:10px;flex-shrink:0"></div>
+        <div style="flex:1">
+          <div class="fs14 b">Худи Jordan</div>
+          <div class="fs14 b mt4 t-m">150 BYN</div>
+          <div class="fs12 t-t mt4">Покупатель: <span class="t-s clk" data-to="s5">@street_fan</span></div>
+        </div>
+        <div class="fs11 t-t">18 авг., 11:20</div>
+      </div>
+      <div class="f gap12 ac p16" style="border-bottom:1px solid #1a1a1a">
+        <div style="width:60px;height:60px;background:linear-gradient(135deg, #2a2a2a, #3a3a3a);border-radius:10px;flex-shrink:0"></div>
+        <div style="flex:1">
+          <div class="fs14 b">Кепка Stussy</div>
+          <div class="fs14 b mt4 t-m">60 BYN</div>
+          <div class="fs12 t-t mt4">Покупатель: <span class="t-s clk" data-to="s5">@minsk_user</span></div>
+        </div>
+        <div class="fs11 t-t">10 авг., 19:45</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ЭКРАН 11. Избранное -->
+  <div class="s" id="s11">
+    <div class="hdr">
+      <div class="fs15 t-t clk" data-to="s8">←</div>
+      <div class="fs16 b">Избранное</div>
+    </div>
+    <div class="sc p8 grid2">
+      <div class="item clk" data-to="s4">
+        <div class="item-img"><span class="ic">♡</span><div class="sold-badge">ПРОДАНО</div></div>
+        <div class="item-info">
+          <div class="fs16 b t-m">120 BYN</div>
+          <div class="fs12 t-s mt4" style="line-height:1.3">Nike Air Force 1</div>
+          <div class="fs11 t-t mt4">@seller_nick</div>
+          <div class="f js ac mt8"><span class="sz">42 EU</span><span class="fs10 t-mu">23 авг., 13:47</span></div>
+        </div>
+      </div>
+      <div class="item clk" data-to="s4">
+        <div class="item-img"><span class="ic">♡</span></div>
+        <div class="item-info">
+          <div class="fs16 b t-m">250 BYN</div>
+          <div class="fs12 t-s mt4" style="line-height:1.3">Худи Carhartt WIP</div>
+          <div class="fs11 t-t mt4">@archive_by</div>
+          <div class="f js ac mt8"><span class="sz">L</span><span class="fs10 t-mu">23 авг., 12:15</span></div>
+        </div>
+      </div>
+      <div class="item clk" data-to="s4">
+        <div class="item-img"><span class="ic">♡</span></div>
+        <div class="item-info">
+          <div class="fs16 b t-m">180 BYN</div>
+          <div class="fs12 t-s mt4" style="line-height:1.3">Джинсы Polar Big Boy</div>
+          <div class="fs11 t-t mt4">@street_shop</div>
+          <div class="f js ac mt8"><span class="sz">M / 30</span><span class="fs10 t-mu">22 авг., 19:12</span></div>
+        </div>
+      </div>
+      <div class="item clk" data-to="s4">
+        <div class="item-img"><span class="ic">♡</span></div>
+        <div class="item-info">
+          <div class="fs16 b t-m">90 BYN</div>
+          <div class="fs12 t-s mt4" style="line-height:1.3">Футболка Stussy</div>
+          <div class="fs11 t-t mt4">@vintage_minsk</div>
+          <div class="f js ac mt8"><span class="sz">XL</span><span class="fs10 t-mu">21 авг., 11:40</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ЭКРАН 12. Настройки -->
+  <div class="s" id="s12">
+    <div class="hdr">
+      <div class="fs15 t-t clk" data-to="s8">←</div>
+      <div class="fs16 b">Настройки</div>
+    </div>
+    <div class="sc p16">
+      <div class="menu-item"><span>Редактировать профиль</span><span class="t-t">→</span></div>
+      <div class="menu-item"><span>Контакты</span><span class="t-t">→</span></div>
+      <div class="menu-item mt16 t-r"><span>Выйти из аккаунта</span></div>
+      <div class="menu-item t-r"><span>Удалить аккаунт</span></div>
+    </div>
+  </div>
+
+  <!-- ЭКРАН 13. Модалка «Оставить отзыв» -->
+  <div class="s" id="s13">
+    <div class="sc p16">
+      <div class="fs20 b">Профиль</div>
+      <div class="fs14 t-t mt8">Оставить отзыв о прошедшей сделке</div>
+    </div>
+    <div class="overlay clk" data-to="s8">
+      <div class="modal" onclick="event.stopPropagation()">
+        <div class="fs18 b mb16">Оставить отзыв</div>
+        <div class="fs12 t-t mb8">Выберите товар</div>
+        <div class="f gap8 mb16">
+          <div class="chip a">Nike Air Force 1</div>
+          <div class="chip">Худи Carhartt</div>
+        </div>
+        <div class="fs12 t-t mb8">Оценка</div>
+        <div class="f jc gap12 mb16 fs26 t-t">
+          <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span style="opacity:0.2">⭐</span>
+        </div>
+        <div class="fs12 t-t mb8">Текст отзыва</div>
+        <textarea class="in bg-i mb16" placeholder="Расскажите о сделке..."></textarea>
+        <div class="btn clk" data-to="s8">Отправить</div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
